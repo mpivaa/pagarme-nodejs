@@ -11,7 +11,7 @@ Usage
 -----
 
 ````javascript
-PagarMe = require('pagarme.js')
+PagarMe = require('pagarme')
 PagarMe.api_key = "ak_test_N7DGOazupaDE1SvVjCmP3HVqxiF9ne";
 transaction = new PagarMe.Transaction;
 
