@@ -1,0 +1,10 @@
+var PagarMe = require('./lib/pagarme');
+PagarMe.api_key = "ak_test_N7DGOazupaDE1SvVjCmP3HVqxiF9ne";
+var transaction = new PagarMe.Transaction({ card_number: "4901720080344448", card_holder_name: "Jose da Silva", card_expiration_date: "1015", card_cvv: "310", amount: 100 })
+
+transaction.paid = function (d) {console.log(this)}
+transaction.refused = function (d) {console.log(this)}
+transaction.error = function (e) {console.log(e)}
+transaction.api_error = function (e) {console.log(e)}
+
+transaction.charge();

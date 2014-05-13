@@ -2,13 +2,16 @@
   "author": "Marcelo Piva",
   "name": "pagarme",
   "description": "PagarMe nodejs library",
-  "version": "0.1.1",
-  "main": "./pagarme",
+  "version": "0.1.2",
+  "main": "./lib/pagarme",
   "repository": {
     "type": "git",
     "url": "https://github.com/mpivaa/pagarme-nodejs.git"
   },
   "engines": {
     "node": "*"
-  }
+  },
+  "dependencies": {
+    "ursa": "*",
+  },
 }
